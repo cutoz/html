@@ -12,3 +12,8 @@
     }
     ?>
     
+    
+    <HTML>
+        Yo.! This is HTML 
+        <title> Adding a cookie</title>
+        
