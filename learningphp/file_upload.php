@@ -8,7 +8,7 @@
         $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
         if($check!==false)
         {
-            echo "File is an image" .$check["mime"].".";
+            echo "File is an image " .$check["mime"].". </br>";
             $upload_ok = 1;
         }
         
@@ -20,11 +20,12 @@
         
         if (file_exists($target_file)) {
           echo "Sorry, file already exists.";
-            $uploadOk = 0;
+            $upload_ok = 0;
             
         }
+      
             
-        if ($uploadOk == 0) {
+        if ($upload_ok == 0) {
             echo "Sorry, your file was not uploaded.";
         // if everything is ok, try to upload file
         }
